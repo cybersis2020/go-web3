@@ -157,6 +157,7 @@ func (l *LogFilter) SetTo(b BlockNumber) {
 type Receipt struct {
 	TransactionHash   Hash
 	TransactionIndex  uint64
+	Status            uint64
 	ContractAddress   Address
 	BlockHash         Hash
 	From              Address
