@@ -197,6 +197,9 @@ func (r *Receipt) UnmarshalJSON(buf []byte) error {
 	if r.TransactionIndex, err = decodeUint(v, "transactionIndex"); err != nil {
 		return err
 	}
+	if r.Status, err = decodeUint(v, "status"); err != nil {
+		return err
+	}
 	if r.BlockNumber, err = decodeUint(v, "blockNumber"); err != nil {
 		return err
 	}
