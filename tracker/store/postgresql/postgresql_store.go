@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/cybersis2020/go-web3"
+	"github.com/cybersis2020/go-web3/tracker/store"
 	"github.com/jmoiron/sqlx"
-	"github.com/umbracle/go-web3"
-	"github.com/umbracle/go-web3/tracker/store"
 
 	// Enable postgres for sqlx
 	_ "github.com/lib/pq"

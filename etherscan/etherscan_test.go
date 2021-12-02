@@ -4,8 +4,8 @@ import (
 	"os"
 	"testing"
 
+	"github.com/cybersis2020/go-web3"
 	"github.com/stretchr/testify/assert"
-	"github.com/umbracle/go-web3"
 )
 
 func testEtherscanMainnet(t *testing.T) *Etherscan {

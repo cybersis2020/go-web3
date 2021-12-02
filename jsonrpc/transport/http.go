@@ -3,7 +3,7 @@ package transport
 import (
 	"encoding/json"
 
-	"github.com/umbracle/go-web3/jsonrpc/codec"
+	"github.com/cybersis2020/go-web3/jsonrpc/codec"
 	"github.com/valyala/fasthttp"
 )
 

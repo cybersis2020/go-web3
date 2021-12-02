@@ -10,14 +10,14 @@ import (
 	"testing"
 	"time"
 
+	web3 "github.com/cybersis2020/go-web3"
+	"github.com/cybersis2020/go-web3/abi"
+	"github.com/cybersis2020/go-web3/blocktracker"
+	"github.com/cybersis2020/go-web3/jsonrpc"
+	"github.com/cybersis2020/go-web3/jsonrpc/codec"
+	"github.com/cybersis2020/go-web3/testutil"
+	"github.com/cybersis2020/go-web3/tracker/store/inmem"
 	"github.com/stretchr/testify/assert"
-	web3 "github.com/umbracle/go-web3"
-	"github.com/umbracle/go-web3/abi"
-	"github.com/umbracle/go-web3/blocktracker"
-	"github.com/umbracle/go-web3/jsonrpc"
-	"github.com/umbracle/go-web3/jsonrpc/codec"
-	"github.com/umbracle/go-web3/testutil"
-	"github.com/umbracle/go-web3/tracker/store/inmem"
 )
 
 func testConfig() ConfigOption {

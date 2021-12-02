@@ -12,7 +12,7 @@ import (
 
 	"path/filepath"
 
-	"github.com/umbracle/go-web3/compiler"
+	"github.com/cybersis2020/go-web3/compiler"
 )
 
 const (

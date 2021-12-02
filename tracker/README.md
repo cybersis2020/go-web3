@@ -13,12 +13,12 @@ import (
 	"os/signal"
 	"syscall"
 
-	web3 "github.com/umbracle/go-web3"
-	"github.com/umbracle/go-web3/abi"
-	"github.com/umbracle/go-web3/jsonrpc"
-	"github.com/umbracle/go-web3/tracker"
+	web3 "github.com/cybersis2020/go-web3"
+	"github.com/cybersis2020/go-web3/abi"
+	"github.com/cybersis2020/go-web3/jsonrpc"
+	"github.com/cybersis2020/go-web3/tracker"
 
-	boltdbStore "github.com/umbracle/go-web3/tracker/store/boltdb"
+	boltdbStore "github.com/cybersis2020/go-web3/tracker/store/boltdb"
 )
 
 var depositEvent = abi.MustNewEvent(`DepositEvent(

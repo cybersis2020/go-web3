@@ -12,9 +12,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/umbracle/go-web3"
-	"github.com/umbracle/go-web3/compiler"
-	"github.com/umbracle/go-web3/testutil"
+	"github.com/cybersis2020/go-web3"
+	"github.com/cybersis2020/go-web3/compiler"
+	"github.com/cybersis2020/go-web3/testutil"
 )
 
 func encodeHex(b []byte) string {
