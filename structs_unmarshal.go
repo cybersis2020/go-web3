@@ -158,14 +158,20 @@ func (t *Transaction) unmarshalJSON(v *fastjson.Value) error {
 		return err
 	}
 
-	if err = decodeHash(&t.BlockHash, v, "blockHash"); err != nil {
-		return err
+	if v.Get("blockHash").String() != "null" {
+		if err = decodeHash(&t.BlockHash, v, "blockHash"); err != nil {
+			return err
+		}
 	}
-	if t.BlockNumber, err = decodeUint(v, "blockNumber"); err != nil {
-		return err
+	if v.Get("blockNumber").String() != "null" {
+		if t.BlockNumber, err = decodeUint(v, "blockNumber"); err != nil {
+			return err
+		}
 	}
-	if t.TxnIndex, err = decodeUint(v, "transactionIndex"); err != nil {
-		return err
+	if v.Get("transactionIndex").String() != "null" {
+		if t.TxnIndex, err = decodeUint(v, "transactionIndex"); err != nil {
+			return err
+		}
 	}
 	return nil
 }
